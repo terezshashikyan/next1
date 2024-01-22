@@ -1,0 +1,24 @@
+@import "../styles/vars.scss";
+
+.wrapper {
+  gap:50px;
+  width: 100%;
+  padding: 50px;
+  @extend %flex-center-center-column;
+  &__firstSection {
+    gap: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 20% 20% 20%;
+  }
+}
+
+.pokemonsList {
+  gap: 20px;
+  width: 100%;
+  display: grid;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: 25% 25% 25% 25%;
+}

@@ -1,0 +1,24 @@
+.wrapper {
+    gap: 6px;
+    display: flex;
+    flex-direction: row;
+  &__li {
+    width: 100%;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 6px 12px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    &__active {
+      width: 100%;
+      cursor: pointer;
+      font-weight: 500;
+      padding: 6px 12px;
+      text-align: center;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      background-color: gray;
+    }
+  }
+}

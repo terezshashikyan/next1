@@ -1,0 +1,33 @@
+@import "../../styles/vars.scss";
+
+.wrapper {
+  width: 250px;
+  height: 350px;
+  cursor: pointer;
+  overflow: hidden;
+  padding: $padding $padding;
+  border-radius: 20px;
+  transition: 2000ms all;
+  -webkit-transition: 2000ms all;
+  @extend %flex-center-center-column;
+  background-color: white;
+  box-shadow: 1px 3px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  -o-object-fit: cover;
+}
+
+.primaryText {
+  color: $primary-color;
+  @extend %base-font-size;
+  text-transform: capitalize;
+}
+
+.secondaryText {
+  color: $secondary-text-color;
+  @extend %base-font-size;
+}

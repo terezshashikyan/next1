@@ -1,0 +1,56 @@
+$padding: 8px;
+$primary-color: #0e5a5c;
+$secondary-color: #e2e2e2;
+$secondary-text-color: #17a5ab;
+
+%flex-center-between {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+%flex-center-start {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+%flex-center-center {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%flex-center-center-column {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+%heading-font-size {
+    font-size: 80px;
+    font-weight: 700;
+    font-family: Inter;
+    letter-spacing: 0.72px;
+}
+
+%base-font-size {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px; 
+    font-family: Inter;
+}
+
+%button-font-size {
+    color:#2196f3;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px; 
+    font-family: Roboto;
+}
