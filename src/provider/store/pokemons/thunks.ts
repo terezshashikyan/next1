@@ -7,7 +7,7 @@ export const fetchPokemonsList = createAsyncThunk(
     if (type === "All Types") {
       try {
         const response = await axios.get(
-          "https://pokeapi.co/api/v2/pokemon?limit=100&offset=0"
+          "https://pokeapi.co/api/v2/pokemon?limit=800&offset=0"
         );
         const count = response.data.count;
         const results = await Promise.all(

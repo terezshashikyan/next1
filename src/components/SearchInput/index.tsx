@@ -1,9 +1,11 @@
 import React, { useState, ChangeEvent, FormEvent, useEffect } from "react";
 
-import styles from "./SearchInput.module.scss";
-import { pokemonsOp, pokemonsSel } from "../../provider/store/pokemons";
-import { useDispatch, useSelector } from "react-redux";
+import { CiSearch } from "react-icons/ci";
 import { AppDispatch } from "../../provider/store";
+import { useDispatch, useSelector } from "react-redux";
+import { pokemonsOp, pokemonsSel } from "../../provider/store/pokemons";
+
+import styles from "./SearchInput.module.scss";
 
 const SearchInput: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -16,13 +18,17 @@ const SearchInput: React.FC = () => {
   };
 
   return (
+    <div className={styles.wrapper}>
     <input
-      className={styles.wrapper__input}
-      type="text"
-      placeholder="Search..."
-      value={searchInput}
-      onChange={handleSearchInputChange}
+    className={styles.wrapper__input}
+    type="text"
+    placeholder="Search..."
+    value={searchInput}
+    onChange={handleSearchInputChange}
     />
+    <CiSearch className={styles.wrapper__searchIcon}/>
+    </div>
+    
   );
 };
 

@@ -5,18 +5,18 @@
   height: 350px;
   cursor: pointer;
   overflow: hidden;
-  padding: $padding $padding;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: 2000ms all;
+  padding: $padding $padding;
   -webkit-transition: 2000ms all;
+  background-color: $primary-color;
   @extend %flex-center-center-column;
-  background-color: white;
   box-shadow: 1px 3px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .img {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   object-fit: contain;
   -o-object-fit: cover;
 }

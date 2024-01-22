@@ -11,7 +11,7 @@ export const initialState: IPokemonsInitialState = {
         currentPage: 1,
         searchInput: '',
         sortMethod: "A to Z",
-        selectedType: "poison",
+        selectedType: "fire",
       },
     },
     error: null,
