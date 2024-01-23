@@ -135,4 +135,3 @@ const PokemonPage = ({ params }: { params: any }) => {
 };
 
 export default PokemonPage;
-

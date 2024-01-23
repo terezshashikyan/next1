@@ -45,8 +45,16 @@ span {
   src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-Regular.ttf") format("truetype");
+}
+
 .container {
   width: 90%;
   height: 100%;
   margin: 0 auto;
+  display: flex;
+  align-self: center;
+  justify-content: center;
 }

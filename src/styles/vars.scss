@@ -3,6 +3,16 @@ $primary-color: #0b3954;
 $secondary-color: #e2e2e2;
 $secondary-text-color: #17a5ab;
 
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter/Inter-Regular.ttf") format("truetype");
+  }
+
 %flex-center-between {
     gap: 8px;
     display: flex;
@@ -52,5 +62,5 @@ $secondary-text-color: #17a5ab;
     font-size: 18px;
     font-weight: 600;
     line-height: 18px; 
-    font-family: Roboto;
+    font-family: Inter;
 }

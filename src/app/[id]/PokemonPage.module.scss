@@ -1,6 +1,7 @@
 .wrapper {
   gap: 50px;
   width: 70%;
+  padding: 50px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -10,6 +11,7 @@
     font-size: 1rem;
     color: #397f84;
     text-align: left;
+    font-family: Inter;
   }
   &__main {
     gap: 50px;
@@ -26,14 +28,14 @@
         display: flex;
         flex-direction: column;
         &_bold {
-          font: Inter;
+          font-family: Inter;
           font-size: 1.2rem;
           color: #397f84;
           font-weight: 800;
           text-align: center;
         }
         &_light {
-          font: Inter;
+          font-family: Inter;
           font-weight: 500;
           font-size: 1.2rem;
           text-align: center;
