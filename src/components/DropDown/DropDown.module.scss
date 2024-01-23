@@ -7,6 +7,7 @@
   position: relative;
   align-items: center;
   flex-direction: column;
+  background-color: #ccc;
 
   &__header {
     width: 100%;
@@ -22,6 +23,7 @@
     padding: 8px 6px 8px 12px;
     justify-content: space-between;
     border: 2px solid $primary-color;
+
   }
 
   &__body {
@@ -32,14 +34,18 @@
     padding: 0;
     width: 100%;
     display: flex;
+    border-top: 0px;
     list-style: none;
+    max-height: 200px;
+    overflow-y: scroll;
     border-radius: 4px;
     position: absolute;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid #ccc;
-    background-color: #ffffff;
+    background-color: #ccc;
+    border: 2px solid $primary-color;
+    border-top: 0px;
   }
 
   &__option {
@@ -53,12 +59,14 @@
     position: relative;
     align-items: center;
     flex-direction: row;
-    border: 0px solid #ccc;
     padding: 8px 6px 8px 12px;
-    background-color: #ffffff;
     justify-content: space-between;
     &:hover {
       background-color: #f0f0f0;
     }
   }
+}
+
+.active {
+  background-color: $primary-color;
 }

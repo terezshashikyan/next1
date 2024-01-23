@@ -8,7 +8,7 @@
 }
 body {
   line-height: 1.5;
-  background-color: #637081;
+  background-color: #C3C7C7;
   -webkit-font-smoothing: antialiased;
 }
 img,
@@ -43,4 +43,10 @@ span {
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+.container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
 }

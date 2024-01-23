@@ -14,11 +14,12 @@ const DropDown: React.FC<IDropdownProps> = ({
   options,
   handleClick,
   selectedOption,
+  initialActiveOption
 }) => {
   const dropdownRef = useRef<HTMLDivElement>(null);
   const [isOpen, setIsOpen] = useState(false);
+  const [activeOption, setActiveOption] = useState<string | null>(initialActiveOption);
   const pokemonsList = useSelector(pokemonsSel.pokemonsListSelector);
-
 
   const handleClose = (event: Event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
@@ -33,8 +34,9 @@ const DropDown: React.FC<IDropdownProps> = ({
     };
   }, []);
 
-  const handleOptionClick = (pokemonsList: IPokemon[], option: string) => {
+  const handleOptionClick = (option: string) => {
     setIsOpen(false);
+    setActiveOption(option);
     handleClick(pokemonsList, option);
   };
 
@@ -45,16 +47,17 @@ const DropDown: React.FC<IDropdownProps> = ({
         onClick={() => setIsOpen(!isOpen)}
       >
         {selectedOption}
-        {isOpen ? <BsCaretUpFill/> : <BsCaretDownFill/>}
-
+        {isOpen ? <BsCaretUpFill /> : <BsCaretDownFill />}
       </div>
       {isOpen && (
         <ul className={styles.dropdown__body}>
           {options.map((option: string) => (
             <li
               key={option}
-              className={styles.dropdown__option}
-              onClick={() => handleOptionClick(pokemonsList, option)}
+              className={`${styles.dropdown__option} ${
+                activeOption === option ? styles.active : ""
+              }`}
+              onClick={() => handleOptionClick(option)}
             >
               {option}
             </li>

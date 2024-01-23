@@ -83,6 +83,7 @@ const Home = () => {
           ]}
           handleClick={handleSortMethodClick}
           selectedOption= {sortMethod}
+          initialActiveOption={sortMethod}
         />
         <DropDown
           options={[
@@ -109,11 +110,13 @@ const Home = () => {
           ]}
           handleClick={handleTypeClick}
           selectedOption= {selectedType}
+          initialActiveOption={selectedType}
         />
         <DropDown
           options={["10", "20", "50"]}
           handleClick={handleLimitClick}
           selectedOption={limit.toString()}
+          initialActiveOption= {limit.toString()}
         />
       </div>
       <div className={styles.pokemonsList}>{pokemonsListRenderer}</div>

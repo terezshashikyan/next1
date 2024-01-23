@@ -28,6 +28,6 @@
 }
 
 .secondaryText {
-  color: $secondary-text-color;
   @extend %base-font-size;
+  color: $secondary-text-color;
 }
